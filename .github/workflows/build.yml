@@ -2,14 +2,10 @@ name: Print India on Push
 
 on:
   push:
-    branches: [ main ] # change this to the branch name you want to trigger the workflow on
 
 jobs:
   print-india:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      
       - name: Print India
-        run: echo India
+        run: echo "India"
